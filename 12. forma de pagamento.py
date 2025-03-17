@@ -34,7 +34,7 @@ match forma_de_pagamento:
       print("Quantidade de parcelas inválida. O máximo permitido é 6.")
 
     case 4:
-      print("Opção de pagamento inválida. Por favor, tente novamente.")
+      print("Opção de pagamento invalido Por favor, tente novamente.")
 
 
 
