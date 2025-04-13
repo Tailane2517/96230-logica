@@ -13,18 +13,21 @@ def calculo_do_imc(peso, altura):
 
 massa = calculo_do_imc(peso, altura)
 
-if massa < 18.5:
-        resultado = "Abaixo do peso"
-elif massa >= 18.5 and massa <= 24.9:
-        resultado = "Peso normal"
-elif massa >= 25 and massa <+ 29.9:
-        resultado = "Sobrepeso"
-elif massa >= 30 and massa <+ 34.9:
-        resultado = "Sobrepeso"
-elif massa >= 35 and massa <+ 39.9:
-        resultado = "Sobrepeso"
-elif massa >= :
-        resultado = "Sobrepeso"
+def classificar_imc(massa):     
+        if massa < 18.5:
+                return  "Abaixo do peso - Consulte um nutricionista para orientação"
+        elif massa >= 18.5 and massa <= 24.9:
+                 return "Peso normal - Mantenha hábitos saúdaveis!"
+        elif massa >= 25 and massa <+ 29.9:
+                return  "Sobrepeso - Considere uma dieta balanceada e atividade física."
+        elif massa >= 30 and massa <+ 34.9:
+                return  "Obesidade grau 1 - Procure orientação de um profissional de saúde"
+        elif massa >= 35 and massa <+ 39.9:
+                return  "Obesidade grau 2 - Consulte um médico para avaliação e orientação"
+        else:
+                 return  "Obesidade grau 3 - Busque assistência médica imediatamente"
 
+classificacao = classificar_imc(massa)
 
-print(f"O IMC é: {calculo_do_imc(peso, altura):.2f}")
+print(f"Seu IMC é: {massa:.2f}")
+print(classificacao)
