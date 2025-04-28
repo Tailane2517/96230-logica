@@ -36,6 +36,7 @@ while True:
             prato = "Opção inválida"
             preco = 0
 
+
     lista_pratos.append(prato)       
     precos_pratos.append(preco)
         
@@ -47,6 +48,7 @@ while True:
 
 
 
-for prato in lista_pratos:
+for precos_prato in lista_pratos:
     print(f"Prato: {prato}")
-    print(f"\nTotal: {sum(precos_pratos)}")
+
+print(f"Total da conta: {sum(precos_pratos):.2f}")
