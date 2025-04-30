@@ -8,7 +8,6 @@ class Endereco:
     numero: str
 
 
-
 @dataclass
 class Pessoa:
     #Atributos da classe(variáveis que pertencem a uma classe).
