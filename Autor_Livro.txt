@@ -1,0 +1,9 @@
+Nome: jyhgiu
+ Biografia: huhbihkvg
+Titulo: gkbk
+ Ano: 2525
+ Autor: Autor(nome='jyhgiu', biografia='huhbihkvg')Nome: jijh
+ Biografia: jioj
+Titulo: nbkjk
+ Ano: 599
+ Autor: Autor(nome='jijh', biografia='jioj')
