@@ -19,7 +19,7 @@ QUANTIDADE_DADOS = 1
 for i in range(QUANTIDADE_DADOS):
     dados = Dados(
                 nome = input("Digite seu nome: "),
-                data_de_nascimento = int(input("Digite sua data de nascimento: ")),
+                data_de_nascimento = str(input("Digite sua data de nascimento: ")),
                 rg = input("Digite o seu RG: "),
                 cpf = int(input("Digite o seu CPF: "))
     )
@@ -33,7 +33,8 @@ def salvando_arquivo(Dados):
     with open(nome_arquivo, "a") as catalogo_dados:
         for dados in lista_de_dados:
             catalogo_dados.write(f"Nome: {dados.nome} \nData_de_nascimento: {dados.data_de_nascimento}\nRG: {dados.rg}\nCPF: {dados.cpf}\n\n")
-    
+
+
 
 arquivo = salvando_arquivo(Dados)
 
